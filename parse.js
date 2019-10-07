@@ -32,8 +32,5 @@ async function weather(type) {
 app.get('/', async (req,res)=>{
     res.send((await weather()));
 });
-app.get('/n', async (req,res)=>{
-    res.send((await request(pData)));
-})
 
 app.listen(80);
